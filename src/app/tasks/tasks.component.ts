@@ -9,10 +9,6 @@ import { Component, Input } from '@angular/core';
 })
 export class TasksComponent {
 
-  @Input({ required: true}) name!: string;
-
-  onSelectUser(name: string) {
-    this.name = name;
-  }
+  @Input() name?: string;
 
 }
